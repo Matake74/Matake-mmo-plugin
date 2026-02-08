@@ -1,0 +1,9 @@
+{
+  "Group": "com.coreplugin",
+  "Name": "CorePlugin",
+  "Version": "1.0.0",
+  "Main": "com.mmo.core.CorePlugin",
+  "Description": "Plugin MMO core avec systèmes de party, quêtes, instances, professions et HUD",
+  "Authors": ["YourName"],
+  "IncludesAssetPack": false
+}

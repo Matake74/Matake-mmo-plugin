@@ -1,0 +1,56 @@
+professions:
+  LUMBERJACK:
+    id: "LUMBERJACK"
+    name: "Bûcheron"
+    maxLevel: 50
+    xpCurve: "linear:100" # ou "exp:1.3:50"
+  MINER:
+    id: "MINER"
+    name: "Mineur"
+    maxLevel: 50
+    xpCurve: "linear:120"
+  TANNER:
+    id: "TANNER"
+    name: "Tanneur"
+    maxLevel: 50
+    xpCurve: "linear:90"
+  BLACKSMITH_WEAPON:
+    id: "BLACKSMITH_WEAPON"
+    name: "Forgeron (armes & outils)"
+    maxLevel: 50
+    xpCurve: "exp:1.25:80"
+  BLACKSMITH_ARMOR:
+    id: "BLACKSMITH_ARMOR"
+    name: "Forgeron (armures)"
+    maxLevel: 50
+    xpCurve: "exp:1.25:80"
+  TAILOR:
+    id: "TAILOR"
+    name: "Couturier"
+    maxLevel: 50
+    xpCurve: "linear:100"
+  LEATHERWORKER:
+    id: "LEATHERWORKER"
+    name: "Travailleur du cuir"
+    maxLevel: 50
+    xpCurve: "linear:100"
+  FARMER:
+    id: "FARMER"
+    name: "Paysan"
+    maxLevel: 50
+    xpCurve: "linear:80"
+  COOK:
+    id: "COOK"
+    name: "Cuisinier"
+    maxLevel: 50
+    xpCurve: "linear:90"
+  TAILOR_CLOTHES:
+    id: "TAILOR_CLOTHES"
+    name: "Tailleur"
+    maxLevel: 50
+    xpCurve: "linear:100"
+  JEWELER:
+    id: "JEWELER"
+    name: "Bijoutier"
+    maxLevel: 50
+    xpCurve: "exp:1.3:60"

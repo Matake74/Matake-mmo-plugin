@@ -1,0 +1,17 @@
+workstations:
+  FORGE:
+    id: "FORGE"
+    name: "Forge"
+    blockId: "block_forge"
+  TANNERY:
+    id: "TANNERY"
+    name: "Tannerie"
+    blockId: "block_tannery"
+  COOKING:
+    id: "COOKING"
+    name: "Cuisine"
+    blockId: "block_campfire"
+  LOOM:
+    id: "LOOM"
+    name: "Métier à tisser"
+    blockId: "block_loom"

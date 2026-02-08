@@ -1,0 +1,244 @@
+instances:
+  intro_cave:
+    id: "intro_cave"
+    name: "Grotte d'introduction"
+    type: "SOLO"
+    minPlayers: 1
+    maxPlayers: 1
+
+    world: "intro_cave_world"
+    spawn:
+      x: 10
+      y: 50
+      z: 10
+
+    exitWorld: "overworld"
+    exit:
+      x: 100
+      y: 65
+      z: 200
+
+    startQuest: "intro_01"
+    endQuest: "intro_01"
+
+    startCountdownSeconds: 10
+    lootPhaseSeconds: 60
+
+    mobs:
+      - id: "bat_pack"
+        type: "BAT"
+        count: 10
+        spawn:
+          x: 15
+          y: 52
+          z: 15
+      - id: "slime_pack"
+        type: "SLIME"
+        count: 5
+        spawn:
+          x: 20
+          y: 50
+          z: 20
+
+    boss:
+      id: "intro_boss"
+      type: "ZOMBIE"
+      spawn:
+        x: 30
+        y: 50
+        z: 30
+
+    chests:
+      - id: "intro_chest_1"
+        questEntityId: "intro_chest_1"
+        lootTable: "intro_cave_common"
+        spawn:
+          x: 25
+          y: 50
+          z: 25
+      - id: "intro_chest_2"
+        questEntityId: "intro_chest_2"
+        lootTable: "intro_cave_rare"
+        spawn:
+          x: 28
+          y: 50
+          z: 28
+
+  duo_arena:
+    id: "duo_arena"
+    name: "Arène des duellistes"
+    type: "GROUP"
+    minPlayers: 2
+    maxPlayers: 5
+    
+    world: "duo_arena_world"
+    spawn:
+      x: 5
+      y: 40
+      z: 5
+      
+    exitWorld: "overworld"
+    exit:
+      x: 120
+      y: 65
+      z: 210
+      
+    startQuest: "duo_01"
+    endQuest: "duo_01"
+    
+    startCountdownSeconds: 15
+    lootPhaseSeconds: 60
+    
+    mobs:
+      - id: "skeleton_archers"
+        type: "SKELETON"
+        count: 8
+        spawn:
+          x: 10
+          y: 40
+          z: 10
+      - id: "zombie_warriors"
+        type: "ZOMBIE"
+        count: 6
+        spawn:
+          x: 15
+          y: 40
+          z: 15
+      - id: "spider_ambush"
+        type: "SPIDER"
+        count: 4
+        spawn:
+          x: 8
+          y: 41
+          z: 12
+    
+    boss:
+      id: "arena_champion"
+      type: "ARENA_BOSS"
+      spawn:
+        x: 20
+        y: 40
+        z: 20
+    
+    chests:
+      - id: "duo_chest_1"
+        questEntityId: "duo_chest_1"
+        lootTable: "duo_arena_common"
+        spawn:
+          x: 18
+          y: 40
+          z: 18
+      - id: "duo_chest_2"
+        questEntityId: "duo_chest_2"
+        lootTable: "duo_arena_rare"
+        spawn:
+          x: 22
+          y: 40
+          z: 22
+      - id: "duo_chest_boss"
+        questEntityId: "duo_chest_boss"
+        lootTable: "duo_arena_boss"
+        spawn:
+          x: 20
+          y: 41
+          z: 20
+
+  raid_ruins:
+    id: "raid_ruins"
+    name: "Raid des ruines anciennes"
+    type: "RAID"
+    minPlayers: 5
+    maxPlayers: 10
+    
+    world: "raid_ruins_world"
+    spawn:
+      x: 0
+      y: 60
+      z: 0
+      
+    exitWorld: "overworld"
+    exit:
+      x: 150
+      y: 70
+      z: 250
+      
+    startQuest: "raid_01"
+    endQuest: "raid_01"
+    
+    startCountdownSeconds: 30
+    lootPhaseSeconds: 90
+    
+    mobs:
+      - id: "ancient_guardians"
+        type: "GUARDIAN"
+        count: 15
+        spawn:
+          x: 10
+          y: 60
+          z: 10
+      - id: "cursed_knights"
+        type: "WITHER_SKELETON"
+        count: 12
+        spawn:
+          x: -10
+          y: 60
+          z: -10
+      - id: "shadow_assassins"
+        type: "ENDERMAN"
+        count: 8
+        spawn:
+          x: 15
+          y: 61
+          z: -15
+      - id: "elemental_mages"
+        type: "BLAZE"
+        count: 10
+        spawn:
+          x: -15
+          y: 60
+          z: 15
+    
+    boss:
+      id: "ancient_lich"
+      type: "RAID_BOSS_LICH"
+      spawn:
+        x: 0
+        y: 65
+        z: 0
+    
+    chests:
+      - id: "raid_chest_1"
+        questEntityId: "raid_chest_1"
+        lootTable: "raid_ruins_common"
+        spawn:
+          x: 5
+          y: 60
+          z: 5
+      - id: "raid_chest_2"
+        questEntityId: "raid_chest_2"
+        lootTable: "raid_ruins_rare"
+        spawn:
+          x: -5
+          y: 60
+          z: -5
+      - id: "raid_chest_3"
+        questEntityId: "raid_chest_3"
+        lootTable: "raid_ruins_epic"
+        spawn:
+          x: 5
+          y: 60
+          z: -5
+      - id: "raid_chest_4"
+        questEntityId: "raid_chest_4"
+        lootTable: "raid_ruins_legendary"
+        spawn:
+          x: -5
+          y: 60
+          z: 5
+      - id: "raid_chest_boss"
+        questEntityId: "raid_chest_boss"
+        lootTable: "raid_ruins_boss"
+        spawn:
+          x: 0
+          y: 66
+          z: 0

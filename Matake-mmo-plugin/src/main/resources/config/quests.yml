@@ -1,0 +1,28 @@
+quests:
+  intro_01:
+    id: "intro_01"
+    name: "Premiers pas"
+    description: "Parlez au villageois, puis allez à la tour."
+    coop: false
+    stages:
+      - id: "talk_villager"
+        type: "TALK"
+        npcId: "villager_01"
+        waypoint: "village_center"
+      - id: "go_tower"
+        type: "REACH_LOCATION"
+        waypoint: "tower_entrance"
+
+  dungeon_01:
+    id: "dungeon_01"
+    name: "Donjon des ruines"
+    description: "Explorez les ruines et vainquez le gardien."
+    coop: true
+    stages:
+      - id: "enter_ruins"
+        type: "REACH_LOCATION"
+        waypoint: "ruins_entrance"
+      - id: "kill_guardian"
+        type: "KILL_BOSS"
+        bossId: "guardian_01"
+        waypoint: "guardian_room"
